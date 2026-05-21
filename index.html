@@ -11,7 +11,7 @@
     />
 
     <!-- link for aos library styles -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/media.css" />
@@ -21,6 +21,9 @@
     <title>Behruz Bahodirov - Portfolio</title>
   </head>
   <body>
+    <header>
+      <button class="custom__bg-btn">Theme selector</button>
+    </header>
     <main>
       <section class="banner">
         <div class="content">
@@ -42,27 +45,51 @@
 
       <section class="skills">
         <div class="container">
-          <h2 class="title" data-aos="fade-up" data-aos-duration="1000">Skills & Technologies</h2>
+          <h2 class="title" data-aos="fade-up" data-aos-duration="1000">
+            Skills & Technologies
+          </h2>
           <div class="skillsbox">
-            <div class="box__item" data-aos="fade-up" data-aos-duration="1100">html</div>
-            <div class="box__item" data-aos="fade-up" data-aos-duration="1200">css</div>
-            <div class="box__item" data-aos="fade-up" data-aos-duration="1300">GitHub</div>
-            <div class="box__item" data-aos="fade-up" data-aos-duration="1400">Git</div>
-            <div class="box__item" data-aos="fade-up" data-aos-duration="1500">JS</div>
-            <div class="box__item" data-aos="fade-up" data-aos-duration="1600">netlify</div>
-            <div class="box__item" data-aos="fade-up" data-aos-duration="1700">Figma</div>
-            <div class="box__item" data-aos="fade-up" data-aos-duration="1800">responsive design</div>
+            <div class="box__item" data-aos="fade-up" data-aos-duration="1100">
+              <span class="skill__text">html</span>
+            </div>
+            <div class="box__item" data-aos="fade-up" data-aos-duration="1200">
+              <span class="skill__text">css</span>
+            </div>
+            <div class="box__item" data-aos="fade-up" data-aos-duration="1300">
+              <span class="skill__text">GitHub</span>
+            </div>
+            <div class="box__item" data-aos="fade-up" data-aos-duration="1400">
+              <span class="skill__text">Git</span>
+            </div>
+            <div class="box__item" data-aos="fade-up" data-aos-duration="1500">
+              <span class="skill__text">JS</span>
+            </div>
+            <div class="box__item" data-aos="fade-up" data-aos-duration="1600">
+              <span class="skill__text">Netlify</span>
+            </div>
+            <div class="box__item" data-aos="fade-up" data-aos-duration="1700">
+              <span class="skill__text">Figma</span>
+            </div>
+            <div class="box__item" data-aos="fade-up" data-aos-duration="1800">
+              <span class="skill__text">Responsive Design</span>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="projects" id="projects">
         <div class="container">
-          <h2 class="title" data-aos="fade-up" data-aos-duration="1000">Selected Projects</h2>
+          <h2 class="title" data-aos="fade-up" data-aos-duration="1000">
+            Selected Projects
+          </h2>
 
           <div class="projects__content">
-            <div class="project" data-aos="fade-up" data-aos-duration="1000" >
-              <a href="https://app.netlify.com/projects/behruz-bahodirov-todo-list/" target="_blank">
+            <div class="project" data-aos="fade-up" data-aos-duration="1000">
+              <a
+                href="https://behruz-bahodirov-todo-list.netlify.app/"
+                target="_blank"
+                class="project__link"
+              >
                 <img src="./img/todolist.png" alt="todolist img" />
               </a>
               <h3 class="project__title">ToDo List</h3>
@@ -76,8 +103,12 @@
                 <span class="tech__name">js</span>
               </div>
             </div>
-            <div class="project" data-aos="fade-up" data-aos-duration="1000" >
-              <a href="https://app.netlify.com/projects/behruz-bahodirov-js-game/" target="_blank">
+            <div class="project" data-aos="fade-up" data-aos-duration="1000">
+              <a
+                href="https://behruz-bahodirov-js-game.netlify.app/"
+                target="_blank"
+                class="project__link"
+              >
                 <img src="./img/tosh-qaychi-qogoz.png" alt="jsgame img" />
               </a>
               <h3 class="project__title">Rock Paper Scissors Game</h3>
@@ -91,8 +122,12 @@
                 <span class="tech__name">js</span>
               </div>
             </div>
-            <div class="project" data-aos="fade-up" data-aos-duration="1000" >
-              <a href="https://app.netlify.com/projects/behruz-bahodirov-airpods/" target="_blank">
+            <div class="project" data-aos="fade-up" data-aos-duration="1000">
+              <a
+                href="https://behruz-bahodirov-airpods.netlify.app/"
+                target="_blank"
+                class="project__link"
+              >
                 <img src="./img/airpods.png" alt="airpods img" />
               </a>
               <h3 class="project__title">Airpods</h3>
@@ -105,10 +140,11 @@
                 <span class="tech__name">css</span>
               </div>
             </div>
-            <div class="project" data-aos="fade-up" data-aos-duration="1000" >
+            <div class="project" data-aos="fade-up" data-aos-duration="1000">
               <a
-                href="https://app.netlify.com/projects/behruz-bahodirov-tic-game/"
+                href="https://behruz-bahodirov-tic-game.netlify.app/"
                 target="_blank"
+                class="project__link"
               >
                 <img src="./img/tick.png" alt="airpods img" />
               </a>
@@ -123,10 +159,11 @@
                 <span class="tech__name">js</span>
               </div>
             </div>
-            <div class="project" data-aos="fade-up" data-aos-duration="1000" >
+            <div class="project" data-aos="fade-up" data-aos-duration="1000">
               <a
-                href="https://app.netlify.com/projects/little-lemon-project-01/"
+                href="https://little-lemon-project-01.netlify.app/"
                 target="_blank"
+                class="project__link"
               >
                 <img src="./img/lemon.png" alt="airpods img" />
               </a>
@@ -140,10 +177,11 @@
                 <span class="tech__name">css</span>
               </div>
             </div>
-            <div class="project" data-aos="fade-up" data-aos-duration="1000" >
+            <div class="project" data-aos="fade-up" data-aos-duration="1000">
               <a
-                href="https://app.netlify.com/projects/behruz-bahodirov-nike-project/"
+                href="https://behruz-bahodirov-nike-project.netlify.app/"
                 target="_blank"
+                class="project__link"
               >
                 <img src="./img/nike.png" alt="airpods img" />
               </a>
@@ -163,28 +201,38 @@
 
       <section class="contact" id="contact">
         <div class="container">
-          <h2 class="title" data-aos="fade-up" data-aos-duration="1000" >Get in Touch</h2>
+          <h2 class="title" data-aos="fade-up" data-aos-duration="1000">
+            Get in Touch
+          </h2>
           <p class="contact__info" data-aos="fade-up" data-aos-duration="1000">
             I'm always interested in hearing about new projects and
             opportunities.
           </p>
 
           <div class="contact__box">
-            <div class="contact__item" data-aos="fade-up" data-aos-duration="1000" >
+            <div
+              class="contact__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <img
                 src="./img/email.svg"
                 width="40"
                 height="40"
                 alt="email icon"
               />
-              <div class="item__info" >
+              <div class="item__info">
                 <h3 class="info__title">Email</h3>
                 <a href="mailto: gmod4252@gmail.com" class="contact__link"
                   >gmod4252@gmail.com</a
                 >
               </div>
             </div>
-            <div class="contact__item" data-aos="fade-up" data-aos-duration="1000">
+            <div
+              class="contact__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <img
                 src="./img/github.svg"
                 width="40"
@@ -201,7 +249,11 @@
                 >
               </div>
             </div>
-            <div class="contact__item" data-aos="fade-up" data-aos-duration="1000">
+            <div
+              class="contact__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <img
                 src="./img/telegram.svg"
                 width="40"
@@ -231,5 +283,6 @@
       </div>
     </footer>
     <script src="./js/app.js"></script>
+    <script src="./js/theme.js"></script>
   </body>
 </html>

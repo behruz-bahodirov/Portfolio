@@ -1,3 +1,25 @@
+:root {
+  --yellow: #F4CB38;
+  --header__bg: linear-gradient(124.13deg, #F4CB38 10.97%, #F4A938 77.98%);
+  --black : #333;
+  --dark: #2D2D2D;
+  --link-color: #f2f2f24d;
+  --body__bg: #FDFDFD;
+  --white: #FFFFFF;
+  --text__color: rgb(134, 133, 133);
+  --footer__bg: #201F24;
+  --card__bg: #292929;
+  --hover__color: lightgray;
+  --backround-color: rgba(5, 5, 5, 0.843);
+  --shadow: rgba(0, 0, 0, 0.1);
+  --color-text: darkgray;
+  --light-gray: lightgray;
+  --blue: blue;
+  --british: rgba(255, 255, 255, 0.911);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +31,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: #f2f2f24d;
+    background-color: var(--body__bg);
 }
 
 button {
@@ -44,6 +66,7 @@ button {
     font-size: 120px;
     font-weight: 800;
     line-height: 1;
+    color: var(--black)
 }
 
 .banner__desc {
@@ -51,7 +74,7 @@ button {
     width: 100%;
     font-size: 32px;
     line-height: 40px;
-    color: rgb(134, 133, 133);
+    color: var(--text__color);
 }
 
 .btn__group {
@@ -67,22 +90,22 @@ button {
     font-size: 24px;
     line-height: 16px;
     transition: .3s;
-    border: 0.5px solid lightgray;
+    border: 0.5px solid var(--light-gray);
     cursor: pointer;
-    color: #030303;
+    color: var(--shadow)
 }
 
 .btn:hover {
-    background-color: lightgray;
+    background-color: var(--hover__color);
 }
 
 .dark {
-    background-color: #030303;
-    color: #fff;
+    background-color: var(--dark);
+    color: var(--white);
 }
 
 .dark:hover {
-    background-color: rgba(5, 5, 5, 0.843)
+    background-color: var(--backround-color);
 }
 
 .skills {
@@ -93,6 +116,7 @@ button {
     font-size: 48px;
     line-height: 1;
     margin-bottom: 48px;
+    color: var(--black)
 }
 
 .skillsbox {
@@ -107,19 +131,22 @@ button {
     justify-content: center;
     text-transform: capitalize;
     padding: 24px;
-    border: 0.5px solid rgba(211, 211, 211, 0.78);
+    border: 0.5px solid var(--text__color);
     border-radius: 4px;
-    background-color: #fff;
+    background-color: var(--white);
     font-size: 16px;
     font-weight: 600;
 }
 
+.skill__text {
+    color:var(--backround-color);
+}
 /* Projects section */
 
 
 .projects {
     padding: 96px 0;
-    background-color: #f2f2f24d;
+    background-color: var(--body__bg);
 }
 
 .projects__content {
@@ -127,25 +154,26 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    color: var(--white);
 }
 
 .project {
     padding: 32px;
-    background-color: #fff;
+    background-color: var(--white);
     max-width: 626px;
     width: 100%;
-    border: 0.5px solid rgba(211, 211, 211, 0.78);
+    border: 0.5px solid var(--text__color);
     border-radius: 4px;
     transition: 0.3s all;
 }
 
 .project:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow);
 }
 
 .project:hover .project__title {
-    color: blue;
+    color: var(--blue);
 }
 
 .project>a img {
@@ -159,11 +187,12 @@ button {
 .project__title {
     font-size: 24px;
     margin: 20px 0;
+    color: var(--dark)
 }
 
 .project__info {
     font-size: 16px;
-    color: darkgray;
+    color: var(--color-text);
     margin-bottom: 16px;
 }
 
@@ -175,10 +204,11 @@ button {
 
 .tech__name {
     padding: 4px 12px ;
-    background-color: rgb(241, 240, 240);
+    background-color: var(--white);
     border-radius: 9999px;
     text-transform: capitalize;
 }
+
 
 
 /* Contact section */
@@ -189,7 +219,7 @@ button {
 }
 
 .contact__text {
-    color: darkgray;
+    color: var(--color-text);
     margin-bottom: 48px;
     font-size: 20px;
 }
@@ -198,11 +228,12 @@ button {
     display: flex;
     align-items: center;
     gap: 24px;
+    color: var(--white);
 }
 
 .contact__item {
-    background-color: #fff;
-    border: 0.5px solid rgba(211, 211, 211, 0.78);
+    background-color: var(--white);
+    border: 0.5px solid var(--text__color);
     padding: 24px;
     max-width:366px ;
     width: 100%;
@@ -214,17 +245,17 @@ button {
 
 .info__title {
     font-size: 16px;
-    color: #030303;
+    color: var(--footer__bg);
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 .contact__link {
-    color: darkgray;
+    color: var(--color-text);
 }
 
 .contact__item:hover .contact__link{
-    color: blue;
+    color: var(--blue);
 }
 
 
@@ -236,7 +267,7 @@ button {
 
 .contact__info {
     font-size: 20px;
-    color: darkgray;
+    color: var(--color-text);
     margin-bottom: 48px;
 }
 
@@ -254,23 +285,40 @@ button {
 
 .info__title {
     font-size: 20px;
-    color: #030303;
+    color: var(--footer__bg);
 }
 
 .contact__link {
-    color: darkgray;
+    color: var(--color-text);
 }
 
 .contact__item:hover .contact__link{
-    color: blue;
+    color: var(--blue)  ;
+    delay: 0.4s;
 }
 
 
 /* Footer */
 
 .footer {
-    border: 0.5px solid rgba(211, 211, 211, 0.78);
+    border: 0.5px solid var(--text__color);
     padding: 32px 0;
     text-align: center;
-    color: darkgray;
+    color: var(--color-text);
+}
+
+header {
+    position: relative;
+}
+
+.custom__bg-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: var(--white);
+    border: 0.5px solid var(--text__color);
+    cursor: pointer;
+    transition: .3s;
 }
